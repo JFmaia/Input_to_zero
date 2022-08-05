@@ -1,0 +1,30 @@
+body{
+    font-family: Rubik, sans-serif;
+    line-height: 24px;
+    margin: 30px;
+}
+
+p{
+    margin-bottom: 26px;
+}
+
+em{
+    font-style: italic;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.box-text{
+    width: 500px;
+}
+
+.title{
+    font-family: Heebo, sans-serif;
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+

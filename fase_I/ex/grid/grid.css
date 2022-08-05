@@ -1,0 +1,125 @@
+body, html{
+    margin: 0px;
+    height: 100%;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 600px; 
+    width: 400px;/* flex-direction: row; */
+}
+
+#box-1{
+    flex: 1;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dfdede;
+    margin: 2px;
+}
+
+#box-2{
+    flex: 1;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dfdede;
+    margin: 2px;
+}
+
+#box-3{
+    flex: 1;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dfdede;
+    margin: 2px;
+}
+
+#box-4{
+    flex: 1;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dfdede;
+    margin: 2px;
+}
+#box-5{
+    flex: 1;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dfdede;
+    margin: 2px;
+}
+#box-6{
+    flex: 1;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dfdede;
+    margin: 2px;
+}
+
+#box-7{
+    flex: 1;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dfdede;
+    margin: 2px;
+}
+
+#grid-1{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#grid-2{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#grid-3{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#grid-4{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.cicle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color:white ;
+    height: 30px;
+    width: 30px;
+}

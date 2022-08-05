@@ -1,0 +1,39 @@
+
+body, html{
+    margin: 0;
+    height: 100%;
+
+}
+
+#container{
+    display: flex; 
+    height: 100%; /* flex-direction: row; */
+}
+
+#sidebar{
+    background: #73e68c;
+    padding: 16px;
+    width: 86px;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#header{
+    background: #e783d1;
+    padding: 16px;
+}
+
+#content{
+    flex: 1;
+    background: #73c5e6;
+    padding: 16px;
+}
+
+#footer{
+    background: #e1f181;
+    padding: 16px;
+}

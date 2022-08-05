@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+
+    <style>
+        html, body{
+            margin: 12px;
+        }
+
+        #box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        #container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-auto-rows: minmax(100px,auto);
+            gap: 4px;
+            margin: 20px;
+            height: 600px;
+            width: 400px;
+        }
+        .item{
+            border-radius: 20px;
+            padding: 20px;
+            background: #dfdede;
+        }
+
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .item2{
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+
+        .item3{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
+
+        .item4{
+            grid-column-start:4;
+            grid-column-end: 5;
+        }
+        .item5{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start:3;
+            grid-row-end: 5;
+        }
+        
+        .item6{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start:5;   
+            grid-row-end: 7;
+        }
+        
+        .item7{
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start:5;   
+            grid-row-end: 7;
+        }
+
+        .cicle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            background-color:white ;
+            height: 26px;
+            width: 26px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div id="box">
+        <div id="container">
+            <div class="item item1">
+                <div class="cicle">1</div>
+            </div>
+            <div class="item item2">
+                <div class="cicle">2</div>
+            </div>
+            <div class="item item3">
+                <div class="cicle">3</div>
+            </div>
+            <div class="item item4">
+                <div class="cicle">4</div>
+            </div>
+            <div class="item item5">
+                <div class="cicle">5</div>
+            </div>
+            <div class="item item6">
+                <div class="cicle">6</div>
+            </div>
+            <div class="item item7">
+                <div class="cicle">7</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
