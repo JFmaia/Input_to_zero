@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Toodo List</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="todo">
+                <h1>Todo List</h1>
+                <div id="todo-list" class="todo-list">
+                </div>
+                <button class="todo-button">+</button>
+            </div>
+        </div>
+    </main>
+    <script>
+        async function getPost(){
+            try {
+                const promise = await fetch('https://jsonplaceholder.typicode.com/todos');
+                const data = await promise.json()
+                return data;
+            } catch (error) {
+                console.log(error)
+            }
+        }
+
+        async function loadingTodos(){
+            const posts = await getPost()
+            posts.map((post)=>{
+                const listContainer = document.getElementById('todo-list')
+                const newCard = document.createElement('div')
+                newCard.classList.add('todo-list__card')
+                newCard.innerHTML = '<input class="todo-list__checkbox"type="checkbox" name="checkbox"><span></span>'
+                const spanText = newCard.querySelector('span')
+                spanText.innerText = post.title
+                listContainer.appendChild(newCard)
+            })
+        }
+        loadingTodos()
+    </script>
+</body>
+</html>
