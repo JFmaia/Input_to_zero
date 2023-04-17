@@ -8,7 +8,7 @@ export function Home(){
     const className = "title";
 
     return (
-        <div>
+        <div className="container">
             <Title>
                 Olá React!
             </Title>
