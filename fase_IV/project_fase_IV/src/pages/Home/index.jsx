@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Fragment } from 'react'
 // import './home.css'
 // export function Home() {
 //   const [currentTime, updateCurrentTime] = useState(new Date().toLocaleTimeString())
@@ -32,11 +32,13 @@ function Counter() {
       console.log("Contador removido")
     }
   }, [])
-  return <div>
-    <button onClick={add}>Adicionar</button>
-    <button onClick={remove}>Remover</button>
-    <div>{total}</div>
-  </div>
+  return (
+    <Fragment>
+      <button onClick={add}>Adicionar</button>
+      <button onClick={remove}>Remover</button>
+      <div>{total}</div>
+    </Fragment>
+  )
 }
 
 
