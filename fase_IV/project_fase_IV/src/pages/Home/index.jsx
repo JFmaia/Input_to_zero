@@ -23,8 +23,8 @@ import { useState, useEffect, Fragment } from 'react'
 function Counter() {
   const [total, setTotal] = useState(0)
 
-  const add = () => setTotal(total + 1)
-  const remove = () => setTotal(total - 1)
+  const add = () => setTotal(prevState =>  prevState + 1)
+  const remove = () => setTotal(prevState =>  prevState - 1)
 
   useEffect(() => {
     console.log("Contador Criado")
